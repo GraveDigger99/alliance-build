@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Investment</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230731133526">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="60" data-scroll-show class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img class="logo-light" src="img/logo.svg" alt="logo">
+					<img hidden src="img/logo-dark.svg" alt="logo" class="logo-dark">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="projects.html" class="menu__link">проекты</a>
+							</li>
+							<li class="menu__item"><a data-goto-header data-goto=".barriers" href="#" class="menu__link">FAQ</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".contacts__wrapper" href="#" class="menu__link">контакты</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".services" href="#" class="menu__link">услуги</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button data-goto-header data-goto=".contacts__wrapper" type="button" class="header__button button">Оставить заявку</button>
+			</div>
+		</header>
+		<main class="page">
+			<section data-fullscreen class="hero">
+				<div class="hero__container">
+					<div class="hero__buttons">
+						<button type="button" class="hero__button button button_size">Получить инвестиционные
+							предложения</button>
+					</div>
+					<div class="hero__info">
+						<p animation-opacity data-watch class="hero__description">
+							Оплатите деньгами банка строительство вашего дома,  сдайте его в аренду управляющей компании и
+							получайте пассивный доход
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="investment-best">
+				<div class="investment-best__container">
+					<h3 class="investment-best__label label">Недвижимость - лучший защитный актив</h3>
+					<div class="investment-best__items">
+						<div class="investment-best__item">
+							<div class="investment-best__icon">
+								<img src="img/icons/investment/database.svg" alt="icon">
+							</div>
+							<div class="investment-best__name">
+								Стоимость недвижимости <span>неизменно растет</span>
+							</div>
+						</div>
+						<div class="investment-best__item">
+							<div class="investment-best__icon">
+								<img src="img/icons/investment/ruble.svg" alt="icon">
+							</div>
+							<div class="investment-best__name">
+								Рубль <span>дешевеет</span>
+							</div>
+						</div>
+						<div class="investment-best__item">
+							<div class="investment-best__icon">
+								<img src="img/icons/investment/01.svg" alt="icon">
+							</div>
+							<div class="investment-best__icon">
+								<img src="img/icons/investment/02.svg" alt="icon">
+							</div>
+							<div class="investment-best__name">
+								Объект выкупает <span>себя сам</span>
+							</div>
+						</div>
+						<div class="investment-best__item">
+							<div class="investment-best__icon">
+								<img src="img/icons/investment/03.svg" alt="icon">
+							</div>
+							<div class="investment-best__icon">
+								<img src="img/icons/investment/04.svg" alt="icon">
+							</div>
+							<div class="investment-best__name">
+								Аренда <span>растет</span>
+							</div>
+						</div>
+						<div class="investment-best__item">
+							<div class="investment-best__icon">
+								<img src="img/icons/investment/05.svg" alt="icon">
+							</div>
+							<div class="investment-best__name investment-best__name_color">
+								Ипотека в рублях, то есть с каждым годом все дешевле!
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="investment-strategy">
+				<div class="investment-strategy__container">
+					<h3 class="investment-strategy__label label">Стратегия</h3>
+					<div class="investment-strategy__wrapper">
+						<div class="investment-strategy__header">
+							<span>Альянс строй</span> предлагает стратегию инвестирования, при которой вы за ипотечные деньги
+							строите дом, с которого потом
+							получаете доход
+						</div>
+						<ul class="investment-strategy__list">
+							<li class="investment-strategy__item">Мы помогаем вам оформить ипотеку на ИЖС</li>
+							<li class="investment-strategy__item">Разветвление - сдаете в аренду; продаете ваш дом</li>
+							<li class="investment-strategy__item">Строим ваш дом</li>
+							<li class="investment-strategy__item">Получаете доход, оплачиваете им ипотечный кредит</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="investement-calculator">
+				<div class="investement-calculator__container">
+					<h3 class="investement-calculator__label label">
+						Калькулятор
+					</h3>
+					<div class="investement-calculator__wrapper">
+						<form action="#" class="investement-calculator__form">
+							<div class="investement-calculator__line">
+								<label for="total-price" class="investement-calculator__label-form">Стоимость дома</label>
+								<input id="total-price" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="10 500 500" class="input">
+							</div>
+							<div class="investement-calculator__line">
+								<label for="percentage-rate" class="investement-calculator__label-form">Процентная ставка</label>
+								<input id="percentage-rate" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="5" class="input">
+							</div>
+							<div class="investement-calculator__line">
+								<label for="number-of-years" class="investement-calculator__label-form">Количество лет</label>
+								<input id="number-of-years" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="10" class="input">
+							</div>
+							<button type="button" class="investement-calculator__button form-contacts__button">Рассчитать</button>
+						</form>
+						<div class="investement-calculator__result">
+							<div class="investement-calculator__icon">
+								<img src="img/icons/investment/ruble-cal.svg" alt="icon">
+							</div>
+							<p class="investement-calculator__text">
+								Ваш аннуитетный платеж равен
+							</p>
+							<div class="investement-calculator__count">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="investment-more">
+				<div class="investment-more__container">
+					<h3 class="investment-more__label label">Еще</h3>
+					<div class="investment-more__items">
+						<div class="investment-more__info">
+							<div class="investment-more__icon">
+								<img src="img/icons/investment/more.png" alt="icon">
+							</div>
+							<div class="investment-more__header">
+								Продуманная финансовая модель от компании, более 15 лет занимающейся строительством
+							</div>
+						</div>
+						<ul class="investment-more__list">
+							<li>
+								<div class="investment-more__count">1</div>
+								<div class="investment-more__name">
+									Оплата ипотечного платежа <span>с доходов от дома</span>
+								</div>
+							</li>
+							<li>
+								<div class="investment-more__count">2</div>
+								<div class="investment-more__name">
+									Перепродажа с закрытие кредита и получение до <span>80% прибыли</span> от инвестированных
+									средств
+								</div>
+							</li>
+							<li>
+								<div class="investment-more__count">3</div>
+								<div class="investment-more__name">
+									<span>Качественное</span> жилье для вас и вашей семьи
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="index.html" class="footer__logo">
+					<img src="img/logo.svg" alt="icon">
+				</a>
+				<div class="footer__items">
+					<nav class="footer__menu">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a data-goto-header data-goto=".services" href="#" class="footer__link">Услуги</a>
+							</li>
+							<li class="footer__item">
+								<a href="projects.html" class="footer__link">Проекты</a>
+							</li>
+							<li class="footer__item">
+								<a data-goto-header data-goto=".barriers" href="#" class="footer__link">FAQ</a>
+							</li>
+							<li class="footer__item">
+								<a data-goto-header data-goto=".contacts__wrapper" href="#" class="footer__link">Контакты</a>
+							</li>
+						</ul>
+						<div class="footer__info">
+							<a href="#" class="footer__user-agreement">
+								Пользовательское соглашение
+							</a>
+							<a href="#" class="footer__privacy-policy">
+								Политика конфиденциальности
+							</a>
+						</div>
+					</nav>
+					<div class="footer__actions actions-footer">
+						<div class="actions-footer__item">
+							<div class="actions-footer__icon">
+								<img src="img/icons/map.svg" alt="icon">
+							</div>
+							<a href="#" class="actions-footer__link">
+								Адрес компании: г. Москва, ул. Пушкина, 124/А.
+							</a>
+						</div>
+						<div class="actions-footer__item">
+							<div class="actions-footer__icon">
+								<img src="img/icons/phone.svg" alt="icon">
+							</div>
+							<a href="tel:+79990000000" class="actions-footer__link">
+								Телефон: +7-999-000-00-00
+							</a>
+						</div>
+						<div class="actions-footer__item">
+							<div class="actions-footer__icon">
+								<img src="img/icons/mail.svg" alt="icon">
+							</div>
+							<a href="mailto:info@aliance-stroy.pro" class="actions-footer__link">
+								Эл. почта: info@aliance-stroy.pro
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="form-message" aria-hidden="true" class="popup popup_thanks">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					Заявка отправлена, <br> мы с вами свяжемся!
+				</div>
+				<div class="popup__button">
+					<a href="index.html" class="button button_thanks">отлично</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230731133526"></script>
+</body>
+
+</html>
