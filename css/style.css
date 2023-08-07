@@ -581,10 +581,8 @@ body::after {
   transition: all 0.5s ease 0s;
 }
 
-.no-webp .hero{
-  background: url("../img/main-bg.png") center/cover no-repeat; }
-
 .hero {
+  background: url("../img/main-bg.png") center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,8 +739,9 @@ body::after {
   padding: 1.5625rem 2.5rem;
 }
 
-.no-webp .advantages__item:nth-child(even){
-  background: url("../img/bg-2.png") center/cover no-repeat; }
+.advantages__item:nth-child(even) {
+  background: url("../img/bg-2.png") center/cover no-repeat;
+}
 
 .advantages__item:nth-child(odd) {
   background: #fff;
@@ -845,11 +844,9 @@ body::after {
   min-height: 580px;
 }
 
-.no-webp .projects__slide{
-  background: url("../img/bg-2.png") center/cover no-repeat; }
-
 .projects__slide {
   height: 100%;
+  background: url("../img/bg-2.png") center/cover no-repeat;
   padding: 75px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2929,9 +2926,3 @@ body::after {
     height: 100%;
   }
 }
-
-.webp .hero{ background: url(../img/main-bg.webp) center/cover no-repeat; }
-
-.webp .advantages__item:nth-child(even){ background: url(../img/bg-2.webp) center/cover no-repeat; }
-
-.webp .projects__slide{ background: url(../img/bg-2.webp) center/cover no-repeat; }
