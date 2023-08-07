@@ -318,33 +318,36 @@ body::after {
   padding-top: 150px;
 }
 
-[animation] {
-  opacity: 0;
-  -webkit-transform: translate(0, 100%);
-      -ms-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+#player {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  height: 100%;
+  width: 100vh;
+  /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw;
+  /* 100 * 9 / 16 */
 }
 
-[animation]._watcher-view {
-  opacity: 1;
-  -webkit-transform: translate(0, 0%);
-      -ms-transform: translate(0, 0%);
-          transform: translate(0, 0%);
-}
-
-[animation-o] {
-  opacity: 0;
-  -webkit-transition: all 1s ease 0.5s;
-  transition: all 1s ease 0.5s;
-}
-
-[animation-o]._watcher-view {
-  opacity: 1;
+.mob-video {
+  display: none;
 }
 
 .header {
+  background-color: rgba(51, 51, 51, 0.679);
   padding: 1.25rem 0;
   position: fixed;
   top: 0;
@@ -578,8 +581,10 @@ body::after {
   transition: all 0.5s ease 0s;
 }
 
+.no-webp .hero{
+  background: url("../img/main-bg.png") center/cover no-repeat; }
+
 .hero {
-  background: url("../img/main-bg.png") center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,12 +598,15 @@ body::after {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
   padding: 10rem 0;
 }
 
 .hero__container {
   min-height: 100%;
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .hero__buttons {
@@ -610,6 +618,10 @@ body::after {
 
 .hero__buttons:not(:last-child) {
   margin-bottom: 3.75rem;
+}
+
+.hero__button {
+  text-align: center;
 }
 
 .hero__info {
@@ -729,9 +741,8 @@ body::after {
   padding: 1.5625rem 2.5rem;
 }
 
-.advantages__item:nth-child(even) {
-  background: url("../img/bg-2.png") center/cover no-repeat;
-}
+.no-webp .advantages__item:nth-child(even){
+  background: url("../img/bg-2.png") center/cover no-repeat; }
 
 .advantages__item:nth-child(odd) {
   background: #fff;
@@ -834,9 +845,11 @@ body::after {
   min-height: 580px;
 }
 
+.no-webp .projects__slide{
+  background: url("../img/bg-2.png") center/cover no-repeat; }
+
 .projects__slide {
   height: 100%;
-  background: url("../img/bg-2.png") center/cover no-repeat;
   padding: 75px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1982,6 +1995,27 @@ body::after {
   }
 }
 
+@media (orientation: landscape) and (max-width: 61.99875em) {
+  #player {
+    display: none;
+  }
+
+  .mob-video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100%;
+  }
+}
+
 @media (max-width: 61.99875em) {
   .footer__menu:not(:last-child) {
     margin-bottom: 3.125rem;
@@ -2108,6 +2142,25 @@ body::after {
 
   .button_size {
     font-size: 1.25rem;
+  }
+
+  #player {
+    display: none;
+  }
+
+  .mob-video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100%;
   }
 
   .header__container {
@@ -2862,3 +2915,23 @@ body::after {
     text-decoration: underline;
   }
 }
+
+@media (min-aspect-radio: 16/9) {
+  .mob-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-radio: 16/9) {
+  .mob-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.webp .hero{ background: url(../img/main-bg.webp) center/cover no-repeat; }
+
+.webp .advantages__item:nth-child(even){ background: url(../img/bg-2.webp) center/cover no-repeat; }
+
+.webp .projects__slide{ background: url(../img/bg-2.webp) center/cover no-repeat; }
